@@ -18,18 +18,27 @@ const SuperHeader = () => {
       <UnstyledButton>
         <Icon id="shopping-bag" strokeWidth={1} />
       </UnstyledButton>
+      <Spacer/>
     </Wrapper>
   );
 };
+
+const Spacer = styled.div`
+margin-left : 8px
+`
 
 const Wrapper = styled.div`
   font-size: 0.875rem;
   color: ${COLORS.gray[300]};
   background-color: ${COLORS.gray[900]};
+  display : flex;
+  padding : 8px;
+  gap : 16px
 `;
 
 const MarketingMessage = styled.span`
   color: ${COLORS.white};
+  margin-right : auto
 `;
 
 const HelpLink = styled.a`
